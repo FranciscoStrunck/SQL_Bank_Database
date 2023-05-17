@@ -23,6 +23,8 @@ realizadas nas contas. Cada transação tinha um ID único (transaction_id), um 
 fraudulenta (fraudulent). A chave primária era o ID da transação e o ID da conta nesta tabela era uma chave estrangeira que se
 referia ao ID da conta na tabela de contas. Isso significava que cada transação estava associada a uma conta.
 
+![Alt Text](images/transactions_table_image.png)
+
 Para facilitar a busca de clientes, contas e transações, foram criados índices para a identificação do cliente na tabela de
 clientes, para o nome do cliente na tabela de clientes, para o ID do cliente na tabela de contas, e para o ID da conta na
 tabela de transações.
