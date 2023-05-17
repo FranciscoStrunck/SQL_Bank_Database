@@ -1,9 +1,7 @@
-## Vamos normalizar os dados dos clientes tornndo eles mais eficientes e menos redundante
+-- Selecionando o banco de dados para trabalhar nele
+USE BANK;
 
-SELECT * FROM clients;
-SELECT * FROM accounts;
-SELECT * FROM transactions;
-
+-- Imagine que um gerente precise de informações do cliente. Procedimento que olha as estatisticas de cada cliente.
 DELIMITER //
 DROP PROCEDURE IF EXISTS ClientStatistics //
 CREATE PROCEDURE ClientStatistics(IN input_identification VARCHAR(20))
@@ -12,35 +10,34 @@ BEGIN
     
     SELECT client_id INTO selected_client_id FROM clients WHERE identification = input_identification;
 
-    -- Print client details
+    -- Consulta inicial do operador sobre o cliente. Imprime as informações
     SELECT * FROM clients WHERE client_id = selected_client_id;
     
-    -- Total amount
+    -- Valor total na conta
     SELECT SUM(total_amount) AS total_amount FROM accounts WHERE client_id = selected_client_id;
 
-    -- Number of transactions
+    -- Numero total de transações
     SELECT COUNT(*) AS number_of_transactions FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id);
     
-    -- Transaction type frequency
+    -- Transação pelo tipo
     SELECT transaction_type, COUNT(*) AS frequency FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id) GROUP BY transaction_type;
 
-    -- Average transaction amount
+    -- Valor médio da transação
     SELECT AVG(amount) AS average_transaction_amount FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id);
 
-    -- Balance of all transactions
+    -- Saldo de todas as transações
     SELECT SUM(amount) AS total_transaction_amount FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id);
     
-    -- Highest transaction
+    -- Transação mais alta
     SELECT MAX(amount) AS highest_transaction FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id);
 
-    -- Lowest transaction
+    -- Transação mais baixa
     SELECT MIN(amount) AS lowest_transaction FROM transactions WHERE account_id IN (SELECT account_id FROM accounts WHERE client_id = selected_client_id);
 
-	-- % fraudulent transaction
+	-- Porcentagem de transação fraudulenta
 	SELECT (COUNT(CASE WHEN fraudulent = 1 THEN 1 ELSE NULL END) / COUNT(*)) * 100 AS percentage_fraudulent FROM transactions;
 
 END //
 DELIMITER ;
-
 
 CALL ClientStatistics('12345678901');

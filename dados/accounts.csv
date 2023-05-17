@@ -1,0 +1,18 @@
+"account_id";"client_id";"account_type";"opening_date";"account_status";"total_amount"
+1;1;"Conta Corrente";"2015-01-01";1;-4393.09
+2;2;"Conta Empresarial";"2008-02-23";1;112008.0
+3;3;"Conta Corrente";"2024-03-11";1;246475.0
+4;4;"Conta Corrente";"2003-04-12";1;164393.0
+5;5;"Conta Empresarial";"2037-05-01";1;56304.8
+6;6;"Conta Poupança";"2032-06-03";1;146693.0
+7;7;"Conta Corrente";"1993-07-05";1;649762.0
+8;8;"Conta Corrente";"1991-08-12";1;632345.0
+9;9;"Conta Corrente";"2010-09-13";1;783523.0
+10;10;"Conta Corrente";"1958-10-15";1;727801.0
+11;11;"Conta Corrente";"2011-11-02";1;127582.0
+12;12;"Conta Corrente";"1953-04-25";1;437068.0
+13;13;"Conta Corrente";"2014-10-30";1;668472.0
+14;14;"Conta Corrente";"1940-03-25";1;-10291.9
+15;15;"Conta Empresarial";"2013-02-01";1;-21460.8
+16;16;"Conta Corrente";"1949-11-11";1;277689.0
+17;17;"Conta Corrente";"2018-12-12";1;-21512.0

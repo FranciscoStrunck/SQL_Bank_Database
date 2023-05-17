@@ -1,0 +1,18 @@
+"client_id";"client_name";"identification";"street_address";"city";"state";"email";"phone_number";"date_of_birth";"credit_score"
+1;"Francisco Souza";"12345678901";"Rua das Flores, 1233";"Rio de Janeiro";"RJ";"francisco.souza@example.com";"21987654321";"1980-01-01";32
+2;"Anada Silva";"34567890123";"Rua das Rosas, 12223";"São Paulo";"SP";"ananda.silva@example.com";"11987654321";"1985-02-23";50
+3;"Clara Gema";"45678901234";"Rua das Margaridas, 23";"Rio de Janeiro";"RJ";"clara.gema@example.com";"21987654321";"1991-03-11";90
+4;"Ana José";"56789012345";"Rua das Tulipas, 9";"São Paulo";"SP";"ana.jose@example.com";"11987654321";"1980-04-12";80
+5;"Rita Silva";"67890123456";"Rua dos Cravos, 673";"Rio de Janeiro";"RJ";"rita.silva@example.com";"21987654321";"1999-05-01";40
+6;"Joaquim Ribeiro";"78901234567";"Rua das Papoulas, 345";"Rio de Janeiro";"RJ";"joaquim.ribeiro@example.com";"21987654321";"2001-06-03";55
+7;"Patricia Dorval";"33345678901";"Rua dos Lirios, 463";"Belo Horizonte";"MG";"patricia.dorval@example.com";"31987654321";"1956-07-05";80
+8;"Anny Histon";"C12345678";"Rua General Glicerio, 56";"Rio de Janeiro";"RJ";"anny.histon@example.com";"21987654321";"1960-08-12";82
+9;"Richard Kenedy";"A987F65432";"Rua das Laranjeiras, 86";"Rio de Janeiro";"RJ";"richard.kenedy@example.com";"21987654321";"1982-09-13";92
+10;"Celso Ricardo";"14445678901";"Rua Ipiranga, 123";"Rio de Janeiro";"RJ";"celso.ricardo@example.com";"21987654321";"1920-10-15";98
+11;"Maria Souza";"23456789012";"Avenida Paulista, 456";"São Paulo";"SP";"maria.souza@example.com";"11976543210";"1985-11-02";100
+12;"André Almeida";"13445678905";"Rua Ipiranga, 12";"Rio de Janeiro";"RJ";"andre.almeida@example.com";"21967654321";"1920-04-25";78
+13;"Laura Ferreira";"23434789022";"Avenida Carioca, 45";"São Paulo";"SP";"laura.ferreira@example.com";"11976544210";"1985-10-30";100
+14;"Gabriel Cardoso";"13455678910";"Rua dos Amores, 100";"Rio de Janeiro";"RJ";"gabriel.cardoso@example.com";"21987652321";"1920-03-25";10
+15;"Carolina Martins";"23456459419";"Avenida Buenos Aires, 106";"São Paulo";"SP";"carolina.martins@example.com";"11976543212";"1985-02-01";15
+16;"Carlos Pereira";"9F567U8901";"Rua Uruguai, 23";"Rio de Janeiro";"RJ";"carlos.pereira@example.com";"21989954321";"1920-11-11";60
+17;"Sofia Rodrigues";"23456799912";"Avenida Colombia, 4856";"São Paulo";"SP";"sofia.rodrigues@example.com";"11976543990";"1985-12-12";20
